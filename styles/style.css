@@ -6,6 +6,7 @@
     --cinza-terceario: #F9F9F9;
 
     --azul-botao: #167BF7;
+    --azul-botao-active: #487ecf;
     --cor-de-fundo: #00030C;
 
     --fonte-primaria: 'inter' sans-serif;
@@ -63,6 +64,15 @@ body {
     padding: 1rem;
     display: block;
     margin-bottom: 1rem;
+}
+
+.buttons:hover {
+    color: var(--cor-de-fundo);
+    background-color: #FFFFFF;
+}
+
+.buttons:active {
+    background-color: var(--azul-botao-active);
 }
 
 .button__main {
@@ -174,6 +184,10 @@ body {
 
 }
 
+.footer__nav__text:hover {
+    border-bottom: 0.2rem solid;
+}
+
 .footer__final__text {
     color: var(--cinza-terceario);
     font-size: 0.875rem;
@@ -215,9 +229,22 @@ body {
     }
 
     .div__devices {
-        display: block;
+        display: initial;
         align-items: center;
         text-align: center;
+    }
 
+    .footer__logo {
+        margin: 2rem 0rem;
+    }
+
+    .footer__nav__text {
+        margin: 1.5em;
+        display: flow-root;
+
+    }
+
+    .footer__final__text .footer__final__text__fina {
+        font-size: 0, 5rem;
     }
 }
